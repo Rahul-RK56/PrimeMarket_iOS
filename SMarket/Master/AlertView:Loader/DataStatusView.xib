@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Solido Condensed Bold.otf">
+            <string>SolidoCondensed-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="7777" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataStatusView" customModule="SMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cust_logo" translatesAutoresizingMaskIntoConstraints="NO" id="syf-SD-7Tx">
+                    <rect key="frame" x="63.5" y="150.5" width="248" height="173"/>
+                    <color key="tintColor" white="1" alpha="0.7987746147260274" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="L96-AO-Bic">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avL-7v-syG">
+                    <rect key="frame" x="10" y="343.5" width="355" height="19"/>
+                    <fontDescription key="fontDescription" name="SolidoCondensed-Bold" family="Solido Condensed" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="0.80383133561643838" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-YU-8Pn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="avL-7v-syG" firstAttribute="top" secondItem="syf-SD-7Tx" secondAttribute="bottom" constant="20" id="A6k-xC-tfE"/>
+                <constraint firstItem="avL-7v-syG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Lcz-7a-ogm"/>
+                <constraint firstAttribute="bottom" secondItem="nlZ-YU-8Pn" secondAttribute="bottom" id="Qzv-6f-POE"/>
+                <constraint firstItem="nlZ-YU-8Pn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RMt-dY-qic"/>
+                <constraint firstItem="L96-AO-Bic" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TjZ-WM-sqb"/>
+                <constraint firstAttribute="trailing" secondItem="nlZ-YU-8Pn" secondAttribute="trailing" id="Vut-7j-YQa"/>
+                <constraint firstItem="nlZ-YU-8Pn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wer-xZ-UWm"/>
+                <constraint firstItem="syf-SD-7Tx" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="Za7-5B-S4w"/>
+                <constraint firstItem="syf-SD-7Tx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aWb-ix-OKJ"/>
+                <constraint firstItem="L96-AO-Bic" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ev5-M9-39q"/>
+                <constraint firstAttribute="trailing" secondItem="avL-7v-syG" secondAttribute="trailing" constant="10" id="mNX-nx-DWB"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="L96-AO-Bic" id="IMT-g7-pcW"/>
+                <outlet property="btnRetry" destination="nlZ-YU-8Pn" id="Um3-ze-YNA"/>
+                <outlet property="imgVStatus" destination="syf-SD-7Tx" id="2W0-1z-tLN"/>
+                <outlet property="lblStatus" destination="avL-7v-syG" id="WJb-W5-VkT"/>
+            </connections>
+            <point key="canvasLocation" x="-133.5" y="35.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cust_logo" width="248" height="173"/>
+    </resources>
+</document>

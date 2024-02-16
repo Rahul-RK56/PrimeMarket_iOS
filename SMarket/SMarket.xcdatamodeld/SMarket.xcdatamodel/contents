@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TBLCategory" representedClassName="TBLCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="cat_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="TBLUser" representedClassName="TBLUser" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="average_rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="awaiting_rewards" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="login_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="min_withdraw_amount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no_of_rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product_and_services" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="push_status" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="refcash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refferal_alert" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="store_credit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag_line" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="business_category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TBLCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TBLCategory" positionX="-54" positionY="135" width="128" height="90"/>
+        <element name="TBLUser" positionX="-63" positionY="-18" width="128" height="435"/>
+    </elements>
+</model>

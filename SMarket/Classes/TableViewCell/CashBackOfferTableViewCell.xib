@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CashBackOfferTableViewCell" customModule="SMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG1-Hc-Kt4" customClass="GenericLabel" customModule="SMarket" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="72.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-RO-nKV" customClass="GenericLabel" customModule="SMarket" customModuleProvider="target">
+                        <rect key="frame" x="98.5" y="0.0" width="21" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAb-tO-jZu">
+                        <rect key="frame" x="0.0" y="84" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eGx-k6-tGd"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp9-6R-OWk">
+                        <rect key="frame" x="16" y="54.5" width="61" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Read More"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVl-Oi-aFp" customClass="GenericLabel" customModule="SMarket" customModuleProvider="target">
+                        <rect key="frame" x="16" y="29.5" width="288" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zp9-6R-OWk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2FW-l4-Y5t"/>
+                    <constraint firstItem="qAb-tO-jZu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6X4-kF-mmE"/>
+                    <constraint firstAttribute="trailing" secondItem="qAb-tO-jZu" secondAttribute="trailing" id="9Ai-OQ-UaV"/>
+                    <constraint firstItem="WVl-Oi-aFp" firstAttribute="top" secondItem="aG1-Hc-Kt4" secondAttribute="bottom" constant="8" id="C2S-2C-DBx"/>
+                    <constraint firstItem="aG1-Hc-Kt4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CMD-sc-8wF"/>
+                    <constraint firstItem="ChB-RO-nKV" firstAttribute="leading" secondItem="aG1-Hc-Kt4" secondAttribute="trailing" constant="10" id="Cqi-6L-MbM"/>
+                    <constraint firstAttribute="trailing" secondItem="WVl-Oi-aFp" secondAttribute="trailing" constant="16" id="YVR-Gi-Qeo"/>
+                    <constraint firstItem="qAb-tO-jZu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zp9-6R-OWk" secondAttribute="bottom" id="f3y-Ox-ZZX"/>
+                    <constraint firstAttribute="bottom" secondItem="qAb-tO-jZu" secondAttribute="bottom" id="g3I-qO-o0d"/>
+                    <constraint firstItem="zp9-6R-OWk" firstAttribute="top" secondItem="WVl-Oi-aFp" secondAttribute="bottom" constant="5" id="pgy-DJ-yl2"/>
+                    <constraint firstItem="ChB-RO-nKV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tcJ-hZ-Tvg"/>
+                    <constraint firstItem="WVl-Oi-aFp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vJ8-Fc-TK8"/>
+                    <constraint firstItem="aG1-Hc-Kt4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wqP-yi-ccI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCashBackOffoerTitle" destination="aG1-Hc-Kt4" id="QKp-E8-6Md"/>
+                <outlet property="lblCashBackOffoerValue" destination="ChB-RO-nKV" id="swa-lp-36Y"/>
+                <outlet property="lblCashbackDetails" destination="WVl-Oi-aFp" id="EF6-E2-zdd"/>
+                <outlet property="readMoreBtn" destination="zp9-6R-OWk" id="Ktu-BN-IKw"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g7x-HO-cJ9" customClass="CustomAnnotationView" customModule="Fairswap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-yb-flO">
+                    <rect key="frame" x="75" y="59" width="0.0" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="J4b-De-ydC"/>
+                        <constraint firstAttribute="height" id="ZTa-aF-Svk"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinsmap" translatesAutoresizingMaskIntoConstraints="NO" id="qDi-of-8kX">
+                    <rect key="frame" x="57" y="0.0" width="75" height="59"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ib9-yb-flO" firstAttribute="centerX" secondItem="g7x-HO-cJ9" secondAttribute="centerX" id="3Nj-oX-DFo"/>
+                <constraint firstItem="qDi-of-8kX" firstAttribute="leading" secondItem="ib9-yb-flO" secondAttribute="trailing" constant="-18" id="Usf-gI-9PV"/>
+                <constraint firstItem="ib9-yb-flO" firstAttribute="centerY" secondItem="g7x-HO-cJ9" secondAttribute="centerY" id="X8G-VL-JOj"/>
+                <constraint firstItem="ib9-yb-flO" firstAttribute="top" secondItem="qDi-of-8kX" secondAttribute="bottom" id="bds-3a-7dE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nbO-Fk-LTL"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pinsmap" width="75" height="59"/>
+    </resources>
+</document>
